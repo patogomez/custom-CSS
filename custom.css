@@ -1,18 +1,100 @@
-/* DBS2 Custom CSS - https://dbs2.qawhitelabelhf.xyz/ */
-:root{--dbs-blue:#d32f2f;--dbs-blue-dark:#69b9d8;--dbs-blue-hover:#4fa8ca;--dbs-blue-light:#effaff;--dbs-text:#333;--dbs-muted:#667085;--dbs-white:#fff;--dbs-border:#e4e7ec;--dbs-radius:12px;--dbs-radius-sm:8px;--dbs-shadow:0 6px 20px rgba(16,24,40,.08);--dbs-shadow-hover:0 12px 28px rgba(16,24,40,.13);--dbs-font:Arial,Helvetica,sans-serif}
-html{scroll-behavior:smooth}body{margin:0;font-family:var(--dbs-font);color:var(--dbs-text);background:var(--dbs-white);-webkit-font-smoothing:antialiased}*{box-sizing:border-box}img{max-width:100%}a{color:inherit;transition:opacity .2s ease,color .2s ease}button,input,select,textarea{font-family:inherit}
-header,.header,.site-header,.navbar,.navigation{background:var(--dbs-blue)!important;color:var(--dbs-text)!important}header a,.header a,.site-header a,.navbar a,.navigation a{color:var(--dbs-text)!important}header img,.header img,.site-header img,.navbar img{max-height:58px;width:auto;object-fit:contain}
-.hero,.hero-section,[class*=hero]{position:relative}.hero::after,.hero-section::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.16);pointer-events:none}.hero>*,.hero-section>*{position:relative;z-index:1}.hero h1,.hero-section h1,[class*=hero] h1{font-size:clamp(2rem,5vw,4rem);line-height:1.08;font-weight:700;letter-spacing:-.02em}.hero p,.hero-section p,[class*=hero] p{font-size:clamp(1rem,2vw,1.25rem);line-height:1.5}
-.search-bar,.search-widget,.search-form,.booking-widget,.reservation-search{border-radius:var(--dbs-radius)!important}.search-bar,.search-widget,.booking-widget,.reservation-search{box-shadow:var(--dbs-shadow)}.search-bar input,.search-bar select,.search-widget input,.search-widget select,.booking-widget input,.booking-widget select,.reservation-search input,.reservation-search select{min-height:44px;border:1px solid var(--dbs-border);border-radius:var(--dbs-radius-sm);background:var(--dbs-white);color:var(--dbs-text)}.search-bar button,.search-widget button,.booking-widget button,.reservation-search button{min-height:44px;border-radius:var(--dbs-radius-sm)}
-.btn-primary,.button-primary,button[type=submit],button[class*=primary],a[class*=primary]{background-color:var(--dbs-blue-dark)!important;border-color:var(--dbs-blue-dark)!important;color:var(--dbs-white)!important;transition:background-color .2s ease,border-color .2s ease,transform .15s ease,box-shadow .2s ease}.btn-primary:hover,.button-primary:hover,button[type=submit]:hover,button[class*=primary]:hover,a[class*=primary]:hover{background-color:var(--dbs-blue-hover)!important;border-color:var(--dbs-blue-hover)!important;transform:translateY(-1px);box-shadow:0 5px 14px rgba(16,24,40,.12)}
-.property-card,.property-tile,.listing-card,.card[class*=property],[class*=property-card],[class*=listing-card]{background:var(--dbs-white);border:1px solid var(--dbs-border);border-radius:var(--dbs-radius);overflow:hidden;box-shadow:var(--dbs-shadow);transition:transform .2s ease,box-shadow .2s ease}.property-card:hover,.property-tile:hover,.listing-card:hover,.card[class*=property]:hover,[class*=property-card]:hover,[class*=listing-card]:hover{transform:translateY(-3px);box-shadow:var(--dbs-shadow-hover)}.property-card img,.property-tile img,.listing-card img{display:block;width:100%;object-fit:cover}
-.featured-properties,.featured-section,[class*=featured]{position:relative}.featured-properties h2,.featured-section h2,[class*=featured] h2{color:var(--dbs-text);font-weight:700}
-.property-details,.property-description,.amenities,.amenities-section,.calendar,.calendar-section{color:var(--dbs-text)}.amenities h2,.amenities-section h2,.calendar h2,.calendar-section h2{font-weight:700}
-input,select,textarea{border-color:var(--dbs-border)}input:focus,select:focus,textarea:focus,button:focus{outline:2px solid rgba(105,185,216,.35);outline-offset:2px}
-.calendar button,.date-picker button,[class*=calendar] button{border-radius:var(--dbs-radius-sm)}.calendar .selected,.date-picker .selected,[class*=calendar] .selected{background:var(--dbs-blue-dark)!important;color:var(--dbs-white)!important}
-footer,.footer,.site-footer{background:var(--dbs-blue)!important;color:var(--dbs-text)!important;padding:28px 20px!important;font-family:var(--dbs-font)}footer a,.footer a,.site-footer a{color:var(--dbs-text)!important;text-decoration:none}footer a:hover,.footer a:hover,.site-footer a:hover{opacity:.7}footer img,.footer img,.site-footer img{max-width:150px;max-height:55px;object-fit:contain}footer h3,footer h4,.footer h3,.footer h4,.site-footer h3,.site-footer h4{margin-top:0;font-weight:700}footer ul,.footer ul,.site-footer ul{list-style:none;padding-left:0}
-footer [class*=social],.footer [class*=social],.site-footer [class*=social]{display:flex;align-items:center;gap:10px}footer [class*=social] a,.footer [class*=social] a,.site-footer [class*=social] a{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.7)}
-.sticky-search,.search-sticky,[class*=sticky-search]{z-index:1000}[role=dialog],[role=listbox],.dropdown-menu,.calendar-dropdown,.date-picker{z-index:1100}
-@media(max-width:768px){.hero h1,.hero-section h1,[class*=hero] h1{font-size:2.2rem}.hero p,.hero-section p,[class*=hero] p{font-size:1rem}.search-bar,.search-widget,.booking-widget,.reservation-search{width:100%;border-radius:var(--dbs-radius-sm)!important}footer,.footer,.site-footer{padding:24px 16px!important}footer img,.footer img,.site-footer img{max-width:120px}}
-@media(max-width:480px){.hero h1,.hero-section h1,[class*=hero] h1{font-size:1.9rem}.property-card,.property-tile,.listing-card{border-radius:10px}button,.btn,.button{min-height:42px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+/* ============================================================
+   Cozy Corner Stays — Custom CSS
+   Target site: qastagingdbs.qawhitelabelhf.store
+   Changes:
+     1. Header background → Red
+     2. Footer background → Red
+     3. Search button visually positioned inside the header
+   ============================================================ */
+
+
+/* ----------------------------------------------------------
+   1. HEADER — Red background
+   ---------------------------------------------------------- */
+
+header.hf-dbs-header {
+  background-color: #CC0000 !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+}
+
+/* Keep logo image visible */
+header.hf-dbs-header img {
+  filter: brightness(0) invert(1) !important; /* turns dark logos white */
+}
+
+/* Nav links readable on red */
+header.hf-dbs-header a,
+header.hf-dbs-header nav a {
+  color: #ffffff !important;
+}
+
+header.hf-dbs-header a:hover,
+header.hf-dbs-header nav a:hover {
+  color: #ffcccc !important;
+  text-decoration: underline !important;
+}
+
+
+/* ----------------------------------------------------------
+   2. FOOTER — Red background
+   ---------------------------------------------------------- */
+
+footer.hf-dbs-footer {
+  background-color: #CC0000 !important;
+  color: #ffffff !important;
+}
+
+footer.hf-dbs-footer h2,
+footer.hf-dbs-footer p,
+footer.hf-dbs-footer span {
+  color: #ffffff !important;
+}
+
+footer.hf-dbs-footer a {
+  color: #ffdddd !important;
+  text-decoration: underline !important;
+}
+
+footer.hf-dbs-footer a:hover {
+  color: #ffffff !important;
+}
+
+
+/* ----------------------------------------------------------
+   3. SEARCH BUTTON — Positioned inside the header
+
+   Note: CSS cannot physically move DOM elements between
+   sections. This uses fixed positioning to visually place
+   the Search button within the header's right side area.
+   ---------------------------------------------------------- */
+
+button.btn-primary[type="submit"],
+.search-filter-container button[type="submit"] {
+  position: fixed !important;
+  top: 28px !important;
+  right: 24px !important;
+  left: auto !important;
+  z-index: 1100 !important;
+  background-color: #ffffff !important;
+  color: #CC0000 !important;
+  border: 2px solid #ffffff !important;
+  font-weight: 600 !important;
+  border-radius: 4px !important;
+  padding: 6px 20px !important;
+  cursor: pointer !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: fit-content !important;
+  display: inline-block !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+  transition: background-color 0.2s, color 0.2s !important;
+}
+
+button.btn-primary[type="submit"]:hover,
+.search-filter-container button[type="submit"]:hover {
+  background-color: #CC0000 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
